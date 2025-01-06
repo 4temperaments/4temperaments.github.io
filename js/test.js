@@ -37,31 +37,27 @@ $(document).ready(function() {
     
         let allAnswered = true;
         let scores = {
-            Extraversion: 0,
-            Neuroticism: 0
+            Extraversion: 5,
+            Neuroticism: -10
         };
     
         // Collect answers
-        for (let idx = 0; idx < shuffledQuestions.length; idx++) {
-            const question = shuffledQuestions[idx];
-            const selected = $(`input[name="${question.id}"]:checked`).val();
-            if (!selected) {
-                allAnswered = false;
-                alert('Question #' + (idx + 1) + ' is not yet answered. Please answer all the questions before submitting.');
-                break;
-            } else {
-                scores[question.category] += parseInt(selected); // Add score to the relevant category
-            }
-        };
+        // for (let idx = 0; idx < shuffledQuestions.length; idx++) {
+        //     const question = shuffledQuestions[idx];
+        //     const selected = $(`input[name="${question.id}"]:checked`).val();
+        //     if (!selected) {
+        //         allAnswered = false;
+        //         alert('Question #' + (idx + 1) + ' is not yet answered. Please answer all the questions before submitting.');
+        //         break;
+        //     } else {
+        //         scores[question.category] += parseInt(selected); // Add score to the relevant category
+        //     }
+        // };
     
-        if (!allAnswered) {
-            // Return if not all questions are answered
-            return;
-        }
-
-
-        // Display results
-        $('#resultchart').show();
+        // if (!allAnswered) {
+        //     // Return if not all questions are answered
+        //     return;
+        // }
 
         // Neuroticism is reversed. (Neuroticism > 0 means High emotional stability)
         if (scores.Extraversion > 0 && scores.Neuroticism > 0) {
@@ -73,13 +69,51 @@ $(document).ready(function() {
         } else if (scores.Extraversion < 0 && scores.Neuroticism < 0) {
             $('#melancholic').show();
         }
-        
 
         // Prepare results chart
-        const rad = 10 * Math.max(scores.Extraversion, scores.Neuroticism);
+        const rad = 5 * Math.max(Math.abs(scores.Extraversion), Math.abs(scores.Neuroticism));
     
         // Generate the chart with the results
         generateTemperamentChart(scores.Extraversion, scores.Neuroticism, rad);
+
+        // Display results
+        $('#resultchart').show();
+
+        // Update form
+        document.getElementById('submitButton').classList.remove('disabled');
+        updateForm();
+    });
+
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "ANW_yC-Ql6mJg5xhu",
+        });
+    })();
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        const fr_nme = document.getElementById('name').value;
+        const to_eml = document.getElementById('email').value;
+        const yes_dt = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Send the email using EmailJS
+        emailjs.send("contact_service", "contact_form", {
+            from_name: to_eml,
+            to_name: fr_nme,
+            phone: yes_dt,
+            message: message
+        })
+        .then(function(response) {
+            console.log("Success", response);
+            alert("Your message has been sent!");
+        }, function(error) {
+            console.log("Error", error);
+            alert("There was an issue sending your message.");
+        });
     });
 
     // Function to generate the temperament chart
@@ -118,8 +152,8 @@ $(document).ready(function() {
                 scales: {
                     x: {
                         type: 'linear',
-                        min: -20, // Adjusted to fit -1 to 1 for Extraversion
-                        max: 20,
+                        min: -40, // Adjusted to fit -1 to 1 for Extraversion
+                        max: 40,
                         title: {
                             display: true,
                             text: 'Sociability'
@@ -132,8 +166,8 @@ $(document).ready(function() {
                     },
                     y: {
                         type: 'linear',
-                        min: -20, // Adjusted to fit -1 to 1 for Neuroticism (Reversed)
-                        max: 20,
+                        min: -40, // Adjusted to fit -1 to 1 for Neuroticism (Reversed)
+                        max: 40,
                         title: {
                             display: true,
                             text: 'Emotional Stability'
@@ -205,6 +239,36 @@ $(document).ready(function() {
         // Render the chart
         const ctx = document.getElementById('temperamentChart').getContext('2d');
         new Chart(ctx, config);
+    }
+
+    function updateForm() {
+        // Get the current date and time
+        const currentDate = new Date();
+        // Format the date and time (e.g., "YYYY-MM-DD HH:mm:ss")
+        const formattedDate = currentDate.toISOString().split('T')[0];
+
+        // Change the labels dynamically
+        document.querySelector('label[for="name"]').textContent = "From:";  // Full Name to From: Joash
+        document.querySelector('label[for="email"]').textContent = "To:";     // Email address to To: Jane
+        document.querySelector('label[for="phone"]').textContent = "Date:"; // Phone number to Subject: Proposal
+        document.querySelector('label[for="message"]').textContent = "Message:";    // Message stays as is
+        document.getElementById('submitButton').innerHTML = "Yes";
+
+        // Autofill the Contact Us form with the proposal
+        document.getElementById('name').value = "Joash"; // From
+        document.getElementById('email').value = "Jane"; // To
+        document.getElementById('phone').value = formattedDate; // Date
+        document.getElementById('message').value = `Hii!
+            \nIt's crazy how we first met back in 2019, but it wasn't until December 2023 when we really reconnected with each other. I never imagined that one meeting would turn into something so special, and though we've been through highs and lows, I wouldn't trade any of it for anything.
+            \nI know the distance between us now feels like it's miles and miles, pero it doesn't matter. What matters is how strong we've grown together despite everything--being apart, the tough days, and the times we really missed each other. You've made me realize na no matter how far apart we are, I always want to have you in my life.
+            \nAlam mo, even andito ako sa Canada and ikaw nasa pinas, I am always keeping you close to me, close to my heart. I don't know what the future holds, pero one thing is for sure: I want to be with you through it all.
+            \nWith that, I want to ask you officially: Jane, will you be my girlfriend?`;
+
+        // Get the element
+        const textarea = document.getElementById('message');
+        // Adjust the height
+        textarea.style.height = '20rem'; // Set the new height
+        document.getElementById('submitButton').classList.remove('disabled');
     }
 
 });

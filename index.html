@@ -55,8 +55,8 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Are you Determined? Enthusiastic? Thoughtful? Calm?</p>
-                <p class="masthead-subheading font-weight-light mb-0">Take our free quiz and find out.</p>
+                <p class="masthead-subheading font-weight-light mb-0">Are you.. Determined? Enthusiastic? Thoughtful? Calm?</p>
+                <p class="masthead-subheading font-weight-light mb-0">Take our free quiz and find out your temperament!</p>
             </div>
         </header>
         <!-- Temperaments Section-->
@@ -125,8 +125,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 me-auto"><p class="lead">The quiz consists of 40 questions that simulate standard traits of human behavior. Remember, there are no “correct” answers, so try not to overthink your answers and choose the first response that comes to mind.</p></div>
-                    <div class="col-lg-4 ms-auto"><p class="lead">Our quiz is based on the classical Eysenck methods, but using contemporary situations and questions. The responses not only help determine your temperament type, but are also assigned a value in points. It helps a person understand how they may possess traits of extraversion or introversion.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">The quiz consists of 20 questions that simulate standard traits of human behavior. Remember, there are no “correct” answers, so try not to overthink your answers and choose the first response that comes to mind.</p></div>
+                    <div class="col-lg-12 ms-auto"><p class="lead">Our quiz is based on the classical Eysenck methods, but using contemporary situations and questions. The responses not only help determine your temperament type, but are also assigned a value in points. It helps a person understand how they may possess traits of extraversion or introversion.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -259,13 +259,7 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
+                        <!-- * Forms Contact Form *-->
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
@@ -275,14 +269,14 @@
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="text" placeholder="name@example.com" data-sb-validations="required" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="text" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
@@ -292,23 +286,6 @@
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
                         </form>
@@ -324,9 +301,9 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            36 Polaris Street
                             <br />
-                            Clark, MO 65243
+                            Durban, PO 1208
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -496,7 +473,10 @@
         <script src="js/scripts.js"></script>
         <!-- Test Results JS-->
         <script src="js/test.js"></script>
-        <!-- SB Forms JS-->
+        <!-- Forms JS-->
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+        <!-- Include the EmailJS SDK -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     </body>
 </html>
