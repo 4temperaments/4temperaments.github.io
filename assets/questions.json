@@ -1,0 +1,402 @@
+[
+  {
+    "id": "E1",
+    "question": "How do you feel about going to a party?",
+    "options": [
+      { "value": "2", "label": "I can't wait! I thrive in social settings." },
+      { "value": "1", "label": "It depends on my mood, but I usually enjoy it." },
+      { "value": "0", "label": "I’d rather stay in and relax." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E2",
+    "question": "How often do you initiate conversations with strangers?",
+    "options": [
+      { "value": "2", "label": "Always! I love meeting new people." },
+      { "value": "1", "label": "Occasionally, but only if it feels right." },
+      { "value": "0", "label": "Rarely. I prefer to wait for them to start." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E3",
+    "question": "How do you recharge after a long day?",
+    "options": [
+      { "value": "2", "label": "By being around people, chatting, or hanging out!" },
+      { "value": "1", "label": "It’s a mix of solitude and socializing." },
+      { "value": "0", "label": "I need some alone time to recharge fully." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E4",
+    "question": "How do you feel about small talk?",
+    "options": [
+      { "value": "2", "label": "I enjoy it and can talk for hours." },
+      { "value": "1", "label": "I can manage it but prefer meaningful conversations." },
+      { "value": "0", "label": "I find it draining and avoid it when possible." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E5",
+    "question": "Do you enjoy public speaking or being the center of attention?",
+    "options": [
+      { "value": "2", "label": "Absolutely! I feel energized in the spotlight." },
+      { "value": "1", "label": "I’m okay with it, but it’s not my favorite." },
+      { "value": "0", "label": "I avoid it as much as I can." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E6",
+    "question": "How do you react when someone invites you to a spontaneous event?",
+    "options": [
+      { "value": "2", "label": "Count me in! The more spontaneous, the better." },
+      { "value": "1", "label": "I might go, depending on my mood at the time." },
+      { "value": "0", "label": "I prefer to plan ahead and stick to my routine." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E7",
+    "question": "How comfortable are you in a large crowd?",
+    "options": [
+      { "value": "2", "label": "I feel energized and excited by it." },
+      { "value": "1", "label": "I can handle it but need some space." },
+      { "value": "0", "label": "I prefer small, intimate groups." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E8",
+    "question": "How often do you try new activities or hobbies?",
+    "options": [
+      { "value": "2", "label": "I’m always trying something new and adventurous!" },
+      { "value": "1", "label": "I try new things from time to time, if they catch my interest." },
+      { "value": "0", "label": "I stick to what I know." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E9",
+    "question": "How do you feel about working in a team?",
+    "options": [
+      { "value": "2", "label": "I love it! Collaboration is key!" },
+      { "value": "1", "label": "I can work in teams, but I also enjoy working alone." },
+      { "value": "0", "label": "I prefer working independently." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E10",
+    "question": "How do you feel about making new friends?",
+    "options": [
+      { "value": "2", "label": "I make friends everywhere I go!" },
+      { "value": "1", "label": "I’m friendly but selective about who I get close to." },
+      { "value": "0", "label": "I prefer a few close friends over many acquaintances." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E11",
+    "question": "How do you feel about talking on the phone?",
+    "options": [
+      { "value": "2", "label": "I love it, I can chat for hours!" },
+      { "value": "1", "label": "I don’t mind, but it depends on the conversation." },
+      { "value": "0", "label": "I prefer texting or other methods." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E12",
+    "question": "How often do you make plans with friends or family?",
+    "options": [
+      { "value": "2", "label": "I’m always organizing something!" },
+      { "value": "1", "label": "I do it once in a while, usually when I have the time." },
+      { "value": "0", "label": "I prefer spontaneous hangouts or quiet time." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E13",
+    "question": "How do you feel about group activities?",
+    "options": [
+      { "value": "2", "label": "I love being part of a group!" },
+      { "value": "1", "label": "I enjoy it, but I like some solo time too." },
+      { "value": "0", "label": "I prefer individual activities." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E14",
+    "question": "How much energy do you have in social situations?",
+    "options": [
+      { "value": "2", "label": "I’m full of energy and excitement!" },
+      { "value": "1", "label": "I’m energized, but it can depend on the situation." },
+      { "value": "0", "label": "I can feel drained after a while." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E15",
+    "question": "How do you feel about staying home alone for long periods?",
+    "options": [
+      { "value": "2", "label": "I’d get bored, I need to be around people!" },
+      { "value": "1", "label": "I’m fine with it, but I do like some company now and then." },
+      { "value": "0", "label": "I prefer it; it’s my time to recharge." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E16",
+    "question": "How do you feel about meeting new people at work or in social circles?",
+    "options": [
+      { "value": "2", "label": "I love it, new connections are exciting!" },
+      { "value": "1", "label": "It’s okay, I can handle it." },
+      { "value": "0", "label": "I prefer not to engage with new people." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E17",
+    "question": "How do you feel about being invited to a social gathering you know little about?",
+    "options": [
+      { "value": "2", "label": "I’m excited and ready for anything!" },
+      { "value": "1", "label": "I’ll go, but I’m a bit hesitant." },
+      { "value": "0", "label": "I’m not interested, I’d rather stay home." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E18",
+    "question": "How likely are you to speak up during a meeting?",
+    "options": [
+      { "value": "2", "label": "Very likely, I love sharing my ideas!" },
+      { "value": "1", "label": "Sometimes, if I feel strongly about something." },
+      { "value": "0", "label": "I prefer to stay quiet and listen." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E19",
+    "question": "How often do you engage in spontaneous adventures or activities?",
+    "options": [
+      { "value": "2", "label": "All the time! I love unplanned adventures." },
+      { "value": "1", "label": "Occasionally, depending on my schedule." },
+      { "value": "0", "label": "I prefer planned activities." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "E20",
+    "question": "How do you feel about networking events?",
+    "options": [
+      { "value": "2", "label": "I thrive in these! Meeting new people is exciting." },
+      { "value": "1", "label": "I can take them or leave them." },
+      { "value": "0", "label": "I’d rather avoid them." }
+    ],
+    "category": "Extraversion"
+  },
+  {
+    "id": "N1",
+    "question": "How do you usually handle stressful situations?",
+    "options": [
+      { "value": "0", "label": "I stay calm and manage well." },
+      { "value": "1", "label": "I feel anxious, but I can handle it." },
+      { "value": "2", "label": "I get very stressed and find it difficult to manage." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N2",
+    "question": "How often do you experience mood swings?",
+    "options": [
+      { "value": "0", "label": "Rarely, I’m usually steady." },
+      { "value": "1", "label": "Occasionally, I feel my mood shift." },
+      { "value": "2", "label": "Frequently, I have a hard time controlling my emotions." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N3",
+    "question": "How often do you feel nervous in social situations?",
+    "options": [
+      { "value": "0", "label": "Rarely, I feel comfortable around others." },
+      { "value": "1", "label": "Sometimes, but I can manage." },
+      { "value": "2", "label": "Almost always, I feel quite anxious." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N4",
+    "question": "Do you tend to worry about things that are out of your control?",
+    "options": [
+      { "value": "0", "label": "Not at all, I focus on what I can control." },
+      { "value": "1", "label": "Occasionally, but I try to let it go." },
+      { "value": "2", "label": "Yes, I tend to worry a lot about everything." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N5",
+    "question": "How easily do you feel overwhelmed?",
+    "options": [
+      { "value": "0", "label": "I handle pressure well." },
+      { "value": "1", "label": "I get overwhelmed sometimes but can manage." },
+      { "value": "2", "label": "I often feel overwhelmed and struggle to cope." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N6",
+    "question": "How do you react to criticism?",
+    "options": [
+      { "value": "0", "label": "I take it well and try to improve." },
+      { "value": "1", "label": "I get a little defensive but listen to the feedback." },
+      { "value": "2", "label": "I feel hurt and take it personally." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N7",
+    "question": "How do you feel when things don’t go as planned?",
+    "options": [
+      { "value": "0", "label": "I stay calm and adapt." },
+      { "value": "1", "label": "I feel frustrated, but I move on quickly." },
+      { "value": "2", "label": "I get anxious and upset when things don’t go right." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N8",
+    "question": "Do you often feel restless or uneasy without a clear reason?",
+    "options": [
+      { "value": "0", "label": "No, I usually feel at ease." },
+      { "value": "1", "label": "Sometimes, I feel a bit restless." },
+      { "value": "2", "label": "Yes, I often feel uneasy and anxious." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N9",
+    "question": "How often do you get frustrated when things don’t go according to plan?",
+    "options": [
+      { "value": "0", "label": "I stay patient and find another way." },
+      { "value": "1", "label": "I get frustrated occasionally, but I move past it." },
+      { "value": "2", "label": "I get easily frustrated and it affects me." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N10",
+    "question": "Do you tend to overthink situations or decisions?",
+    "options": [
+      { "value": "0", "label": "I make decisions quickly and move forward." },
+      { "value": "1", "label": "I think things through, but I don’t dwell on them." },
+      { "value": "2", "label": "I often overthink and struggle to make decisions." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N11",
+    "question": "How often do you feel insecure about yourself?",
+    "options": [
+      { "value": "0", "label": "Rarely, I’m generally confident." },
+      { "value": "1", "label": "Occasionally, I have doubts about myself." },
+      { "value": "2", "label": "I often feel insecure and lack confidence." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N12",
+    "question": "How do you handle unexpected changes in your routine?",
+    "options": [
+      { "value": "0", "label": "I’m adaptable and go with the flow." },
+      { "value": "1", "label": "I may feel uneasy at first but adjust quickly." },
+      { "value": "2", "label": "I struggle and get anxious when my routine changes." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N13",
+    "question": "How often do you feel overwhelmed by your responsibilities?",
+    "options": [
+      { "value": "0", "label": "I manage my responsibilities with ease." },
+      { "value": "1", "label": "I sometimes feel overwhelmed, but I get through it." },
+      { "value": "2", "label": "I often feel overwhelmed by everything I have to do." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N14",
+    "question": "How do you feel about expressing your emotions?",
+    "options": [
+      { "value": "0", "label": "I’m comfortable expressing my emotions." },
+      { "value": "1", "label": "I express them, but it can take some time." },
+      { "value": "2", "label": "I find it difficult to express how I feel." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N15",
+    "question": "How often do you feel sad or down without a clear reason?",
+    "options": [
+      { "value": "0", "label": "Rarely, I feel generally positive." },
+      { "value": "1", "label": "Sometimes, but it passes quickly." },
+      { "value": "2", "label": "I often feel sad or down for no clear reason." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N16",
+    "question": "How easily do you get upset over minor issues?",
+    "options": [
+      { "value": "0", "label": "I stay calm and let things slide." },
+      { "value": "1", "label": "I get upset sometimes, but it doesn’t last long." },
+      { "value": "2", "label": "I get easily upset over minor things." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N17",
+    "question": "How often do you feel anxious or nervous about the future?",
+    "options": [
+      { "value": "0", "label": "Rarely, I’m confident about the future." },
+      { "value": "1", "label": "Occasionally, I have some uncertainties." },
+      { "value": "2", "label": "I often feel anxious and worry about the future." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N18",
+    "question": "How do you handle conflicts with others?",
+    "options": [
+      { "value": "0", "label": "I try to resolve them calmly and respectfully." },
+      { "value": "1", "label": "I get upset, but I try to work it out." },
+      { "value": "2", "label": "I struggle and get overwhelmed in conflicts." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N19",
+    "question": "How do you feel when faced with uncertainty?",
+    "options": [
+      { "value": "0", "label": "I’m comfortable with uncertainty and adapt." },
+      { "value": "1", "label": "I feel uneasy, but I can deal with it." },
+      { "value": "2", "label": "I get very anxious and struggle with uncertainty." }
+    ],
+    "category": "Neuroticism"
+  },
+  {
+    "id": "N20",
+    "question": "How often do you find yourself feeling overwhelmed by your emotions?",
+    "options": [
+      { "value": "0", "label": "Rarely, I’m able to stay in control." },
+      { "value": "1", "label": "Occasionally, but I get through it." },
+      { "value": "2", "label": "Frequently, my emotions often feel overpowering." }
+    ],
+    "category": "Neuroticism"
+  }
+]
