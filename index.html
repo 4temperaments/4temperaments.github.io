@@ -15,8 +15,10 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- jQuery -->
+        <!-- jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Chart CDN-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,7 +31,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Temperaments</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#temperaments">Temperaments</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#info">Info</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#quiz">Quiz</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
@@ -57,8 +59,8 @@
                 <p class="masthead-subheading font-weight-light mb-0">Take our free quiz and find out.</p>
             </div>
         </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <!-- Temperaments Section-->
+        <section class="page-section portfolio" id="temperaments">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Meet the 4 Temperaments</h2>
@@ -129,14 +131,14 @@
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" href="#quiz">
-                        <i class="fas fa-list-check me-2"></i>
+                        <i class="fas fa-pen-to-square me-2"></i>
                         Take the Quiz
                     </a>
                 </div>
             </div>
         </section>
         <!-- Quiz Section-->
-        <section class="page-section bg-primary text-white mb-0" id="quiz">
+        <section class="page-section bg-secondary text-white mb-0" id="quiz">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">4 Temperaments Quiz</h2>
@@ -147,13 +149,99 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Quiz Content-->
-                 <div class="row" id="quiz-questions"></div>
+                <div class="row" id="questions"></div>
                 <!-- Submit Button-->
                 <div class="text-center mt-4">
                     <a id="submitQuiz" class="btn btn-xl btn-outline-light" href="">
-                        <i class="fas fa-list-check me-2"></i>
+                        <i class="fas fa-paper-plane me-2"></i>
                         Submit
                     </a>
+                </div>
+            </div>
+        </section>
+        <!-- Results Section-->
+        <section class="page-section" id="resultchart">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Quiz Results</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Results Content-->
+                <canvas id="temperamentChart" width="400" height="400"></canvas>
+            </div>
+        </section>
+        <!-- Temperament Description Section-->
+        <section class="page-section bg-info text-white mb-0" id="choleric">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Choleric</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-12 me-auto"><p class="lead">You are a natural leader and energetic go-getter, the classic "type A" personality. You quickly respond to any situation, with a strong opinion or a plan. You are happy to take charge and you are tenacious and driven to follow through.  You are usually extraverted*, which means that your energy is focused externally, actively, and socially. You are a "can do" person, energetic, determined and confident.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">A dynamic, self-motivated leader, you can set your sights on a target and  pursue it until success is achieved.  Strong-willed, you make decisions quickly and decisively, and focus on achieving results. You readily and easily grasp difficult concepts and strategies. Learning comes quickly to you. You think logically and pragmatically, and are not typically bothered by "taking the bull by the horns." In fact, others often let you take charge, though you are sometimes accused of "rolling over" people once you have set a plan in motion. You do not readily reveal deep emotions--except anger--and you are swift to argue your position. Cholerics are often accused of being stubborn, domineering, and dictatorial. You usually think you are right.  You may find yourself irritated by people who are weak, mousy, indecisive, or passive. You demand loyalty from your friends, and thrive when you are in control.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-info text-white mb-0" id="sanguine">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Sanguine</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-12 me-auto"><p class="lead">Hello, Sunshine! You are friendly, fun-loving, and optimistic--always up for something new and exciting. You love a spur-of-the-moment adventure—whether traveling to a new city, meeting new people, or discovering a new idea. Sanguines live in the present moment, and enjoy it to the fullest! Sanguines are the most extraverted of all the temperaments: active, inquisitive, and energized by being with people. You are attentive to other people, place a high value on kindness, and are generous. Your enthusiasm is contagious, you can be a charismatic leader. Sanguines excel in marketing, sales, entrepeneurship, communications, and social media. To the ancient Greeks, sanguines were air: moving, changing, blowing one way and then another.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">If you are a sanguine, then you are most likely the life of the party. You are funny and relish the limelight. You are affectionate, enjoy social activities, and make friends easily. You are imaginative and creative, and are often the one who enthusiastically promotes new ideas on the job. You wear your emotions on your sleeve, but you are always quick to "forgive and forget." As quickly as you discover a new hobby or pursuit, you can also lose interest. On occasion, your sense of humor can get out of hand. You can be easily distracted, struggle with follow-through, and are sometimes accused of being superficial and forgetful. In relationships, you are affectionate, eager to please and forgiving. Your generosity and desire to please others can sometimes result in being overcommitted.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-info text-white mb-0" id="melancholic">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Melancholic</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">                    
+                    <div class="col-lg-12 me-auto"><p class="lead">Yours is a thoughtful, sensitive, artistic temperament, with noble aspirations. "To be, or not to be: that is the question.” In this famous soliloquy, Hamlet reveals his melancholic nature: thoughtful, introspective, slow to act, deeply sensitive with noble ideals. To the ancient Greeks, melancholics were the earth: heavy, deep, difficult to penetrate. If you are a melancholic, you are very likely artistic, romantic, and attentive to detail. Quiet and introverted (except with very close friends and family) you will need to recharge your batteries by spending time alone. In fact, you probably enjoy time alone more than most--whether it is a solitary stroll in the woods, reading a book, writing or other artistic endeavor, prayer. You ponder the deep questions and focus your aspirations on lofty ideals.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">You may worry about the past, have anxiety about the future, and struggle with perfectionism and self-criticism. Your high ideals and fear of making mistakes might cause you to hesitate before taking on projects. You might say “no” when someone asks you to do something new, but once you have begun a project, you will persevere to the end, and you will do it well! You prefer having a few, very good friends, rather than knowing a lot of people superficially. You may long for a deep soul-mate, but you are cautious when it comes to opening up to people. Some may consider you aloof, but you simply need time to warm up.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">Time alone is vital. In relationships, you may be slow to initiate, cautious and pessimistic--yet, once committed, they are unwaveringly loyal and self-sacrificing. On the job, you are careful, abide by the rules, and attentive to detail; many artists, musicians, designers, therapists, priests, accountants, and actors are melancholic. You are frugal, a wise shopper, and you are classic in dress.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-info text-white mb-0" id="phlegmatic">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Phlegmatic</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-12 me-auto"><p class="lead">Yours is one of the most likeable personalities. "What a great guy (gal)!" is often heard about the phlegmatic. Phlegmatics are calm, easy-going, and good-natured. To the ancient Greeks, phlegmatic were like water: calm, cool, going with the flow. They are rarely flamboyant or dictatorial, but prefer cooperation and diplomacy. With their capacity for service and ability to remain calm under pressure, phlegmatics make good emergency responders, engineers, soldiers and military officers.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">If you are a phlegmatic, you get along with most everyone and have a great sense of humor. You tend to be respectful and respectful (in fact, your humor often prevents conflict in contentious situations). Underneath your somewhat reserved exterior is a gentle heart that seeks harmony and abhors conflict. You are dependable, polite, and even-tempered. You feel more comfortable in a small group of friends or even spending a quiet evening relaxing at home. You are rarely flashy, belligerent, or self-serving. You would rather take the blame (even unjustly) than stir up controversy or pick a fight. You may struggle with self-confidence. On the job, you do not seek power or the limelight, but work steadily and methodically. You are a team player, though if charged with leadership, you will fulfill the mission without becoming a tyrant. You can work with the most difficult of personalities. You prefer job security, working within a structured organization, but can also be a leader of great character and service.</p></div>
+                    <div class="col-lg-12 me-auto"><p class="lead">In relationships, you are steady, diplomatic, a stabilizing peace-maker. At times, when people are being very demanding or tension is high, you find yourself withdrawing to be alone--and then you may be accused of being apathetic or indifferent. As a phlegmatic, you would probably prefer that the whole dating process did not require so much effort. Nonetheless, once you are involved in a serious relationship, you will be reliable and faithful.</p></div>
                 </div>
             </div>
         </section>
@@ -285,6 +373,8 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Game Controller: Represents control, strategy, and a focus on winning or achieving goals. Matches the Choleric temperament's driven, competitive, and goal-oriented nature.</p>
+                                    <p class="mb-4">You are a natural leader and energetic go-getter, the classic "type A" personality. You quickly respond to any situation, with a strong opinion or a plan. You are happy to take charge and you are tenacious and driven to follow through.  You are usually extraverted*, which means that your energy is focused externally, actively, and socially. You are a "can do" person, energetic, determined and confident.</p>
+                                    <p class="mb-4">A dynamic, self-motivated leader, you can set your sights on a target and  pursue it until success is achieved.  Strong-willed, you make decisions quickly and decisively, and focus on achieving results. You readily and easily grasp difficult concepts and strategies. Learning comes quickly to you. You think logically and pragmatically, and are not typically bothered by "taking the bull by the horns." In fact, others often let you take charge, though you are sometimes accused of "rolling over" people once you have set a plan in motion. You do not readily reveal deep emotions--except anger--and you are swift to argue your position. Cholerics are often accused of being stubborn, domineering, and dictatorial. You usually think you are right.  You may find yourself irritated by people who are weak, mousy, indecisive, or passive. You demand loyalty from your friends, and thrive when you are in control.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -317,6 +407,8 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Circus Tent: Represents fun, excitement, and a love for social interaction. Fits the Sanguine temperament's lively and outgoing personality.</p>
+                                    <p class="mb-4">Hello, Sunshine! You are friendly, fun-loving, and optimistic--always up for something new and exciting. You love a spur-of-the-moment adventure—whether traveling to a new city, meeting new people, or discovering a new idea. Sanguines live in the present moment, and enjoy it to the fullest! Sanguines are the most extraverted of all the temperaments: active, inquisitive, and energized by being with people. You are attentive to other people, place a high value on kindness, and are generous. Your enthusiasm is contagious, you can be a charismatic leader. Sanguines excel in marketing, sales, entrepeneurship, communications, and social media. To the ancient Greeks, sanguines were air: moving, changing, blowing one way and then another.</p>
+                                    <p class="mb-4">If you are a sanguine, then you are most likely the life of the party. You are funny and relish the limelight. You are affectionate, enjoy social activities, and make friends easily. You are imaginative and creative, and are often the one who enthusiastically promotes new ideas on the job. You wear your emotions on your sleeve, but you are always quick to "forgive and forget." As quickly as you discover a new hobby or pursuit, you can also lose interest. On occasion, your sense of humor can get out of hand. You can be easily distracted, struggle with follow-through, and are sometimes accused of being superficial and forgetful. In relationships, you are affectionate, eager to please and forgiving. Your generosity and desire to please others can sometimes result in being overcommitted.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -349,6 +441,9 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Locked Safe: Represents depth, mystery, and careful introspection. Aligns with the Melancholic temperament's analytical, cautious, and reflective traits.</p>
+                                    <p class="mb-4">Yours is a thoughtful, sensitive, artistic temperament, with noble aspirations. "To be, or not to be: that is the question.” In this famous soliloquy, Hamlet reveals his melancholic nature: thoughtful, introspective, slow to act, deeply sensitive with noble ideals. To the ancient Greeks, melancholics were the earth: heavy, deep, difficult to penetrate. If you are a melancholic, you are very likely artistic, romantic, and attentive to detail. Quiet and introverted (except with very close friends and family) you will need to recharge your batteries by spending time alone. In fact, you probably enjoy time alone more than most--whether it is a solitary stroll in the woods, reading a book, writing or other artistic endeavor, prayer. You ponder the deep questions and focus your aspirations on lofty ideals.</p>
+                                    <p class="mb-4">You may worry about the past, have anxiety about the future, and struggle with perfectionism and self-criticism. Your high ideals and fear of making mistakes might cause you to hesitate before taking on projects. You might say “no” when someone asks you to do something new, but once you have begun a project, you will persevere to the end, and you will do it well! You prefer having a few, very good friends, rather than knowing a lot of people superficially. You may long for a deep soul-mate, but you are cautious when it comes to opening up to people. Some may consider you aloof, but you simply need time to warm up.</p>
+                                    <p class="mb-4">Time alone is vital. In relationships, you may be slow to initiate, cautious and pessimistic--yet, once committed, they are unwaveringly loyal and self-sacrificing. On the job, you are careful, abide by the rules, and attentive to detail; many artists, musicians, designers, therapists, priests, accountants, and actors are melancholic. You are frugal, a wise shopper, and you are classic in dress.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -381,6 +476,9 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Log Cabin: Represents peace, stability, and a sense of comfort. Matches the Phlegmatic temperament's calm, steady, and harmonious nature.</p>
+                                    <p class="mb-4">Yours is one of the most likeable personalities. "What a great guy (gal)!" is often heard about the phlegmatic. Phlegmatics are calm, easy-going, and good-natured. To the ancient Greeks, phlegmatic were like water: calm, cool, going with the flow. They are rarely flamboyant or dictatorial, but prefer cooperation and diplomacy. With their capacity for service and ability to remain calm under pressure, phlegmatics make good emergency responders, engineers, soldiers and military officers.</p>
+                                    <p class="mb-4">If you are a phlegmatic, you get along with most everyone and have a great sense of humor. You tend to be respectful and respectful (in fact, your humor often prevents conflict in contentious situations). Underneath your somewhat reserved exterior is a gentle heart that seeks harmony and abhors conflict. You are dependable, polite, and even-tempered. You feel more comfortable in a small group of friends or even spending a quiet evening relaxing at home. You are rarely flashy, belligerent, or self-serving. You would rather take the blame (even unjustly) than stir up controversy or pick a fight. You may struggle with self-confidence. On the job, you do not seek power or the limelight, but work steadily and methodically. You are a team player, though if charged with leadership, you will fulfill the mission without becoming a tyrant. You can work with the most difficult of personalities. You prefer job security, working within a structured organization, but can also be a leader of great character and service.</p>
+                                    <p class="mb-4">In relationships, you are steady, diplomatic, a stabilizing peace-maker. At times, when people are being very demanding or tension is high, you find yourself withdrawing to be alone--and then you may be accused of being apathetic or indifferent. As a phlegmatic, you would probably prefer that the whole dating process did not require so much effort. Nonetheless, once you are involved in a serious relationship, you will be reliable and faithful.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
