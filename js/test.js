@@ -32,49 +32,60 @@ $(document).ready(function() {
     });
 
     // Handle form submission
-    $('#submitQuiz').on('click', function(e) {
-        e.preventDefault(); // Prevent form submission
-    
+    $('#submitQuiz').on('click', function() {
         let allAnswered = true;
         let scores = {
-            Extraversion: 5,
-            Neuroticism: -10
+            Extraversion: 0,
+            Neuroticism: 0
         };
     
         // Collect answers
-        // for (let idx = 0; idx < shuffledQuestions.length; idx++) {
-        //     const question = shuffledQuestions[idx];
-        //     const selected = $(`input[name="${question.id}"]:checked`).val();
-        //     if (!selected) {
-        //         allAnswered = false;
-        //         alert('Question #' + (idx + 1) + ' is not yet answered. Please answer all the questions before submitting.');
-        //         break;
-        //     } else {
-        //         scores[question.category] += parseInt(selected); // Add score to the relevant category
-        //     }
-        // };
+        for (let idx = 0; idx < shuffledQuestions.length; idx++) {
+            const question = shuffledQuestions[idx];
+            const selected = $(`input[name="${question.id}"]:checked`).val();
+            if (!selected) {
+                allAnswered = false;
+                alert('Question #' + (idx + 1) + ' is not yet answered. Please answer all the questions before submitting.');
+                break;
+            } else {
+                scores[question.category] += parseInt(selected); // Add score to the relevant category
+            }
+        };
     
-        // if (!allAnswered) {
-        //     // Return if not all questions are answered
-        //     return;
-        // }
+        if (!allAnswered) {
+            // Return if not all questions are answered
+            return;
+        }
+        
+        // All questions answered, disable button
+        this.classList.add('disabled');
 
         // Neuroticism is reversed. (Neuroticism > 0 means High emotional stability)
+        let ptshade = 'rgba(75, 57, 0, 0.2)';
+        let ptbordr = 'rgba(255, 99, 132, 1)';
         if (scores.Extraversion > 0 && scores.Neuroticism > 0) {
-            $('#sanguine').show();
+            $('#sanguine').slideDown();
+            ptshade = 'rgba(255, 196, 0, 0.2)';
+            ptbordr = 'rgba(255, 193, 7, 1)';
         } else if (scores.Extraversion > 0 && scores.Neuroticism < 0) {
-            $('#choleric').show();
+            $('#choleric').slideDown();
+            ptshade = 'rgba(220, 53, 69, 0.2)';
+            ptbordr = 'rgba(240, 128, 118, 1)';
         } else if (scores.Extraversion < 0 && scores.Neuroticism > 0) {
-            $('#phlegmatic').show();
+            $('#phlegmatic').slideDown();
+            ptshade = 'rgba(31, 5, 107, 0.2)';
+            ptbordr = 'rgba(180, 157, 250, 1)';
         } else if (scores.Extraversion < 0 && scores.Neuroticism < 0) {
-            $('#melancholic').show();
+            $('#melancholic').slideDown();
+            ptshade = 'rgba(0, 162, 250, 0.2)';
+            ptbordr = 'rgba(13, 202, 240, 1)';
         }
 
         // Prepare results chart
         const rad = 5 * Math.max(Math.abs(scores.Extraversion), Math.abs(scores.Neuroticism));
     
         // Generate the chart with the results
-        generateTemperamentChart(scores.Extraversion, scores.Neuroticism, rad);
+        generateTemperamentChart(scores.Extraversion, scores.Neuroticism, rad, ptshade, ptbordr);
 
         // Display results
         $('#resultchart').show();
@@ -84,12 +95,14 @@ $(document).ready(function() {
         updateForm();
     });
 
+    // Email JS
     (function() {
         // https://dashboard.emailjs.com/admin/account
         emailjs.init({
           publicKey: "ANW_yC-Ql6mJg5xhu",
         });
     })();
+
     // Form submission handler
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
@@ -112,12 +125,12 @@ $(document).ready(function() {
             alert("Your message has been sent!");
         }, function(error) {
             console.log("Error", error);
-            alert("There was an issue sending your message.");
+            // alert("There was an issue sending your message.");
         });
     });
 
     // Function to generate the temperament chart
-    function generateTemperamentChart(extraversionScore, neuroticismScore, rad) {
+    function generateTemperamentChart(extraversionScore, neuroticismScore, rad, ptshade, ptbordr) {
         // Set up data for the graph
         const data = {
             datasets: [{
@@ -127,8 +140,8 @@ $(document).ready(function() {
                     y: neuroticismScore,
                     r: rad
                 }],
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: ptshade,
+                borderColor: ptbordr,
                 borderWidth: 1
             }]
         };
@@ -156,7 +169,7 @@ $(document).ready(function() {
                         max: 40,
                         title: {
                             display: true,
-                            text: 'Sociability'
+                            text: '← Introvert | Extrovert →'
                         },
                         grid: {
                             borderColor: 'black',
@@ -170,7 +183,7 @@ $(document).ready(function() {
                         max: 40,
                         title: {
                             display: true,
-                            text: 'Emotional Stability'
+                            text: '← Neurotic | Stable →'
                         },
                         grid: {
                             borderColor: 'black',

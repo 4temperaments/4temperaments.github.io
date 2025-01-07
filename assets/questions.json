@@ -1,41 +1,40 @@
 [
   {
     "id": "E1",
-    "question": "How do you feel when you have to speak in front of a group at work or social gatherings?",
+    "question": "Do you enjoy spending time with your friends and loved ones, even in large groups?",
     "options": [
-      { "value": "2", "label": "I feel energized and excited." },
-      { "value": "0", "label": "I feel a bit nervous, but I manage." },
-      { "value": "-2", "label": "I feel very anxious and try to avoid it." }
+      { "value": "3", "label": "I love being around many people and socializing." },
+      { "value": "1", "label": "I enjoy socializing but prefer smaller gatherings." },
+      { "value": "-1", "label": "I prefer solitude or being with a few close people." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E2",
-    "question": "Do you enjoy spending time with your friends and loved ones, even in large groups?",
+    "question": "How often do you take the initiative in planning outings or events with your friends?",
     "options": [
-      { "value": "2", "label": "I love being around many people and socializing." },
-      { "value": "0", "label": "I enjoy socializing but prefer smaller gatherings." },
-      { "value": "-2", "label": "I prefer solitude or being with a few close people." }
+      { "value": "3", "label": "I frequently plan events and love taking charge." },
+      { "value": "-1", "label": "I rarely plan events and prefer others to take charge." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E3",
-    "question": "How often do you take the initiative in planning outings or events with your friends?",
+    "question": "Do you find it easy to express your affection and love in public with your partner?",
     "options": [
-      { "value": "2", "label": "I frequently plan events and love taking charge." },
-      { "value": "0", "label": "I occasionally plan things, but I’m comfortable letting others take the lead." },
-      { "value": "-2", "label": "I rarely plan events and prefer others to take charge." }
+      { "value": "3", "label": "Yes, I am comfortable showing affection in public." },
+      { "value": "1", "label": "I do it sometimes, but I prefer being more private." },
+      { "value": "-3", "label": "No, I feel awkward and avoid public displays of affection." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E4",
-    "question": "Do you find it easy to express your affection and love in public with your partner?",
+    "question": "When meeting new people, do you find it easy to start a conversation?",
     "options": [
-      { "value": "2", "label": "Yes, I am comfortable showing affection in public." },
-      { "value": "0", "label": "I do it sometimes, but I prefer being more private." },
-      { "value": "-2", "label": "No, I feel awkward and avoid public displays of affection." }
+      { "value": "3", "label": "Yes, I’m very comfortable meeting new people and starting conversations." },
+      { "value": "1", "label": "I’m okay, but I tend to wait for others to initiate." },
+      { "value": "-3", "label": "No, I feel anxious and struggle to start conversations." }
     ],
     "category": "Extraversion"
   },
@@ -43,7 +42,7 @@
     "id": "E5",
     "question": "At work, do you feel energized when collaborating with a group or team?",
     "options": [
-      { "value": "2", "label": "I thrive in group settings and love working with others." },
+      { "value": "3", "label": "I thrive in group settings and love working with others." },
       { "value": "0", "label": "I can collaborate, but I also enjoy working alone." },
       { "value": "-2", "label": "I prefer working independently and feel drained in group work." }
     ],
@@ -53,49 +52,46 @@
     "id": "E6",
     "question": "Do you enjoy spontaneous romantic getaways or activities with your partner?",
     "options": [
-      { "value": "2", "label": "Yes, I love the spontaneity and excitement of impromptu plans." },
-      { "value": "0", "label": "I enjoy them occasionally, but I prefer to plan ahead." },
+      { "value": "3", "label": "Yes, I love the spontaneity and excitement of impromptu plans." },
       { "value": "-2", "label": "No, I prefer to have everything planned out." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E7",
-    "question": "When meeting new people, do you find it easy to start a conversation?",
+    "question": "Do you enjoy being the center of attention at social gatherings?",
     "options": [
-      { "value": "2", "label": "Yes, I’m very comfortable meeting new people and starting conversations." },
-      { "value": "0", "label": "I’m okay, but I tend to wait for others to initiate." },
-      { "value": "-2", "label": "No, I feel anxious and struggle to start conversations." }
+      { "value": "3", "label": "Yes, I love being in the spotlight." },
+      { "value": "-3", "label": "No, I prefer observing from the sidelines." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E8",
-    "question": "Do you prefer having a lot of friends, or a few close ones?",
+    "question": "When engaging in online communities, do you actively participate or just observe?",
     "options": [
-      { "value": "2", "label": "I enjoy having many friends and acquaintances." },
-      { "value": "0", "label": "I prefer having a few close friends." },
-      { "value": "-2", "label": "I prefer keeping to myself and don’t need a lot of friends." }
+      { "value": "3", "label": "I actively participate and love connecting with others." },
+      { "value": "1", "label": "I occasionally participate but mostly observe." },
+      { "value": "-2", "label": "I avoid participating and prefer privacy." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E9",
-    "question": "Are you the type to engage in social media or online communities frequently?",
+    "question": "Do you prefer large social gatherings or intimate settings?",
     "options": [
-      { "value": "2", "label": "Yes, I enjoy connecting with people online regularly." },
-      { "value": "0", "label": "I use social media occasionally but prefer real-life interactions." },
-      { "value": "-2", "label": "No, I avoid social media and prefer to keep my interactions private." }
+      { "value": "3", "label": "I thrive in large gatherings." },
+      { "value": "-3", "label": "I prefer intimate settings with a few people." }
     ],
     "category": "Extraversion"
   },
   {
     "id": "E10",
-    "question": "When you and your partner are at a social event, do you enjoy being the center of attention?",
+    "question": "When traveling with friends or a partner, do you enjoy meeting new people along the way?",
     "options": [
-      { "value": "2", "label": "Yes, I enjoy being in the spotlight and engaging with everyone." },
-      { "value": "0", "label": "I’m comfortable socializing, but I don’t need to be the center of attention." },
-      { "value": "-2", "label": "No, I prefer to stay in the background and observe." }
+      { "value": "3", "label": "Yes, I love interacting with new people and learning their stories." },
+      { "value": "1", "label": "I enjoy meeting people occasionally, but prefer staying within my group." },
+      { "value": "-2", "label": "No, I prefer to stick to my travel companions." }
     ],
     "category": "Extraversion"
   },
@@ -103,99 +99,94 @@
     "id": "N1",
     "question": "How do you usually handle stressful situations at work?",
     "options": [
-      { "value": "2", "label": "I stay calm and manage well." },
-      { "value": "0", "label": "I feel anxious, but I can handle it." },
-      { "value": "-2", "label": "I get very stressed and find it difficult to manage." }
+      { "value": "3", "label": "I stay calm and manage well." },
+      { "value": "-3", "label": "I get very stressed and find it difficult to manage." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N2",
-    "question": "How do you react when your partner does something that frustrates you?",
+    "question": "When your partner is upset with you, how do you handle the situation?",
     "options": [
-      { "value": "2", "label": "I stay calm and talk about it with my partner." },
-      { "value": "0", "label": "I get upset, but I try not to show it." },
-      { "value": "-2", "label": "I get very emotional and struggle to control my feelings." }
+      { "value": "3", "label": "I calmly address the issue and try to understand them." },
+      { "value": "-3", "label": "I feel overwhelmed and struggle to manage the emotions." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N3",
-    "question": "Do you often worry about your relationship with your friends?",
+    "question": "Do you often find yourself worrying about your work performance?",
     "options": [
-      { "value": "2", "label": "No, I’m confident in my friendships and relationships." },
-      { "value": "0", "label": "Sometimes, but I trust my friends." },
-      { "value": "-2", "label": "Yes, I often worry about what my friends think of me." }
+      { "value": "3", "label": "No, I feel confident in my abilities." },
+      { "value": "1", "label": "Occasionally, but I manage to overcome the worry." },
+      { "value": "-3", "label": "Yes, I often worry about my work performance." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N4",
-    "question": "When things aren’t going well at work, do you get easily discouraged?",
+    "question": "When things go wrong in your relationship, do you overthink them?",
     "options": [
-      { "value": "2", "label": "I stay optimistic and keep trying." },
-      { "value": "0", "label": "I feel discouraged, but I push through." },
-      { "value": "-2", "label": "I get overwhelmed and struggle to stay motivated." }
+      { "value": "3", "label": "No, I approach issues calmly and rationally." },
+      { "value": "1", "label": "Sometimes, but I try to work through it." },
+      { "value": "-3", "label": "Yes, I overthink and feel overwhelmed." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N5",
-    "question": "How do you feel when your partner is upset or angry with you?",
+    "question": "How do you react to unexpected changes at work?",
     "options": [
-      { "value": "2", "label": "I try to understand their feelings and work things out." },
-      { "value": "0", "label": "I feel bad, but I try to give them space." },
-      { "value": "-2", "label": "I get anxious and overwhelmed by the situation." }
+      { "value": "3", "label": "I adapt quickly and stay positive." },
+      { "value": "1", "label": "I feel uneasy at first, but adjust over time." },
+      { "value": "-3", "label": "I get very anxious and struggle to adapt." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N6",
-    "question": "Do you often find yourself worrying about your performance at work, even when things are fine?",
+    "question": "Do you worry about what others think of you in social situations?",
     "options": [
-      { "value": "2", "label": "No, I feel confident in my abilities." },
-      { "value": "0", "label": "Occasionally, but I manage to overcome the worry." },
-      { "value": "-2", "label": "Yes, I often worry about my work performance." }
+      { "value": "3", "label": "No, I’m confident in myself." },
+      { "value": "1", "label": "Sometimes, but I don’t dwell on it." },
+      { "value": "-3", "label": "Yes, I often worry about others' opinions." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N7",
-    "question": "Do you often feel insecure about the future of your relationship with your partner?",
+    "question": "When faced with a tight deadline, how do you usually feel?",
     "options": [
-      { "value": "2", "label": "No, I feel secure and trusting." },
-      { "value": "0", "label": "Sometimes, but I try to push those thoughts aside." },
-      { "value": "-2", "label": "Yes, I often worry about our future together." }
+      { "value": "3", "label": "I stay focused and tackle the challenge calmly." },
+      { "value": "-3", "label": "I feel overwhelmed and struggle to stay productive." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N8",
-    "question": "When your partner is distant or quiet, do you assume something is wrong?",
+    "question": "How do you feel when your partner is distant or quiet?",
     "options": [
-      { "value": "2", "label": "No, I trust that it’s just a moment of quiet." },
-      { "value": "0", "label": "Sometimes, I wonder if something is bothering them." },
-      { "value": "-2", "label": "Yes, I immediately worry that something is wrong." }
+      { "value": "3", "label": "I trust that it’s just a moment of quiet." },
+      { "value": "-3", "label": "I immediately worry that something is wrong." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N9",
-    "question": "Do you often feel anxious or nervous before important social events or gatherings?",
+    "question": "Do you often feel anxious about upcoming events or tasks?",
     "options": [
-      { "value": "2", "label": "No, I feel excited and ready for the event." },
-      { "value": "0", "label": "Occasionally, but I can manage the anxiety." },
-      { "value": "-2", "label": "Yes, I feel very anxious and nervous." }
+      { "value": "3", "label": "No, I feel confident and prepared." },
+      { "value": "1", "label": "Occasionally, but I manage the anxiety." },
+      { "value": "-3", "label": "Yes, I feel very anxious and nervous." }
     ],
     "category": "Neuroticism"
   },
   {
     "id": "N10",
-    "question": "When you’re facing a challenge in your relationship, do you tend to overthink it?",
+    "question": "How do you typically handle feedback or criticism from your partner or colleagues?",
     "options": [
-      { "value": "2", "label": "No, I try to approach it calmly and rationally." },
-      { "value": "0", "label": "Sometimes, I think about it a lot before finding a solution." },
-      { "value": "-2", "label": "Yes, I tend to overthink and get emotionally overwhelmed." }
+      { "value": "3", "label": "I take it positively and try to improve." },
+      { "value": "-3", "label": "I feel hurt and take it personally." }
     ],
     "category": "Neuroticism"
   }

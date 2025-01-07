@@ -108,7 +108,6 @@
                             <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
                         </div>
                     </div>
-                    <!-- <h3 class="page-section-subheading text-center text-secondary font-weight-light mb-0">Choleric • Sanguine • Melancholic • Phlegmatic</h3> -->
                 </div>
             </div>
         </section>
@@ -152,7 +151,7 @@
                 <div class="row" id="questions"></div>
                 <!-- Submit Button-->
                 <div class="text-center mt-4">
-                    <a id="submitQuiz" class="btn btn-xl btn-outline-light" href="">
+                    <a id="submitQuiz" class="btn btn-xl btn-outline-light" href="#resultchart">
                         <i class="fas fa-paper-plane me-2"></i>
                         Submit
                     </a>
@@ -175,7 +174,8 @@
             </div>
         </section>
         <!-- Temperament Description Section-->
-        <section class="page-section bg-info text-white mb-0" id="choleric">
+         <!-- Choleric Result -->
+        <section class="page-section bg-choleric text-white mb-0" id="choleric">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">Choleric</h2>
@@ -187,64 +187,274 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-12 me-auto"><p class="lead">You are a natural leader and energetic go-getter, the classic "type A" personality. You quickly respond to any situation, with a strong opinion or a plan. You are happy to take charge and you are tenacious and driven to follow through.  You are usually extraverted*, which means that your energy is focused externally, actively, and socially. You are a "can do" person, energetic, determined and confident.</p></div>
-                    <div class="col-lg-12 me-auto"><p class="lead">A dynamic, self-motivated leader, you can set your sights on a target and  pursue it until success is achieved.  Strong-willed, you make decisions quickly and decisively, and focus on achieving results. You readily and easily grasp difficult concepts and strategies. Learning comes quickly to you. You think logically and pragmatically, and are not typically bothered by "taking the bull by the horns." In fact, others often let you take charge, though you are sometimes accused of "rolling over" people once you have set a plan in motion. You do not readily reveal deep emotions--except anger--and you are swift to argue your position. Cholerics are often accused of being stubborn, domineering, and dictatorial. You usually think you are right.  You may find yourself irritated by people who are weak, mousy, indecisive, or passive. You demand loyalty from your friends, and thrive when you are in control.</p></div>
+                    <div class="col-lg-12 me-auto">
+                        <h2>Overview</h2>
+                        <p class="lead">Choleric individuals are born leaders, highly active and proactive. They possess strong will and decisiveness, excelling at overcoming obstacles. Cholerics are competitive and enjoy challenges. They value efficiency and productivity, preferring to take charge in any situation. However, their dominant nature can sometimes lead to conflicts, as they struggle to avoid confrontations. They are very assertive, believing their opinions and methods are the best, which can sometimes result in a lack of flexibility.</p>
+                    </div>
+                    <div class="col-lg-6 mb-3 text-danger">
+                        <div class="card border-0">
+                            <div class="card-header text-center bg-danger text-white lead">Strengths</div>
+                            <div class="card-body row">
+                                <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Strong leadership</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Decisive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Highly competitive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Independent</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Efficient</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Goal-oriented</li>
+                                </div>
+                                <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Confident</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>High managerial skills</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Problem-solving ability</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Courageous</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Motivating</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #f08076;"><i class="fa-solid fa-circle-check"></i></span>Strategic thinker</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3 text-danger">
+                        <div class="card border-0">
+                            <div class="card-header text-center bg-danger text-white lead"> Weaknesses</div>
+                            <div class="card-body row">
+                                <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Dominant</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Quick-tempered</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Conflict-prone</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Inflexible</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Critical</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Self-centered</li>
+                                </div>
+                                <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Low tolerance</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Dismissive of others' opinions</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Prone to arrogance</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Excessively challenging</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Emotionally intense</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Rough</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 me-auto">
+                        <h2>Choleric in Relationships</h2>
+                        <p class="lead">Choleric individuals in relationships are known for their dominant and assertive nature, often taking the lead and setting the tone for the relationship. Their passion and directness create an intense dynamic, where emotions are expressed freely and vividly. While they enjoy a strong, possessive connection with their partner, they may occasionally appear controlling due to their need for closeness and loyalty. However, their high energy and passion are sustained throughout the relationship, ensuring that their love remains fiery and alive. Choleric partners are unafraid of conflicts, using them as opportunities to assert their needs and desires, ensuring their voice is heard and that their relationships are both exciting and intense.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="page-section bg-info text-white mb-0" id="sanguine">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Sanguine</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-12 me-auto"><p class="lead">Hello, Sunshine! You are friendly, fun-loving, and optimistic--always up for something new and exciting. You love a spur-of-the-moment adventure—whether traveling to a new city, meeting new people, or discovering a new idea. Sanguines live in the present moment, and enjoy it to the fullest! Sanguines are the most extraverted of all the temperaments: active, inquisitive, and energized by being with people. You are attentive to other people, place a high value on kindness, and are generous. Your enthusiasm is contagious, you can be a charismatic leader. Sanguines excel in marketing, sales, entrepeneurship, communications, and social media. To the ancient Greeks, sanguines were air: moving, changing, blowing one way and then another.</p></div>
-                    <div class="col-lg-12 me-auto"><p class="lead">If you are a sanguine, then you are most likely the life of the party. You are funny and relish the limelight. You are affectionate, enjoy social activities, and make friends easily. You are imaginative and creative, and are often the one who enthusiastically promotes new ideas on the job. You wear your emotions on your sleeve, but you are always quick to "forgive and forget." As quickly as you discover a new hobby or pursuit, you can also lose interest. On occasion, your sense of humor can get out of hand. You can be easily distracted, struggle with follow-through, and are sometimes accused of being superficial and forgetful. In relationships, you are affectionate, eager to please and forgiving. Your generosity and desire to please others can sometimes result in being overcommitted.</p></div>
-                </div>
-            </div>
-        </section>
+        <!-- Melancholic Result -->
         <section class="page-section bg-info text-white mb-0" id="melancholic">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Melancholic</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">                    
-                    <div class="col-lg-12 me-auto"><p class="lead">Yours is a thoughtful, sensitive, artistic temperament, with noble aspirations. "To be, or not to be: that is the question.” In this famous soliloquy, Hamlet reveals his melancholic nature: thoughtful, introspective, slow to act, deeply sensitive with noble ideals. To the ancient Greeks, melancholics were the earth: heavy, deep, difficult to penetrate. If you are a melancholic, you are very likely artistic, romantic, and attentive to detail. Quiet and introverted (except with very close friends and family) you will need to recharge your batteries by spending time alone. In fact, you probably enjoy time alone more than most--whether it is a solitary stroll in the woods, reading a book, writing or other artistic endeavor, prayer. You ponder the deep questions and focus your aspirations on lofty ideals.</p></div>
-                    <div class="col-lg-12 me-auto"><p class="lead">You may worry about the past, have anxiety about the future, and struggle with perfectionism and self-criticism. Your high ideals and fear of making mistakes might cause you to hesitate before taking on projects. You might say “no” when someone asks you to do something new, but once you have begun a project, you will persevere to the end, and you will do it well! You prefer having a few, very good friends, rather than knowing a lot of people superficially. You may long for a deep soul-mate, but you are cautious when it comes to opening up to people. Some may consider you aloof, but you simply need time to warm up.</p></div>
-                    <div class="col-lg-12 me-auto"><p class="lead">Time alone is vital. In relationships, you may be slow to initiate, cautious and pessimistic--yet, once committed, they are unwaveringly loyal and self-sacrificing. On the job, you are careful, abide by the rules, and attentive to detail; many artists, musicians, designers, therapists, priests, accountants, and actors are melancholic. You are frugal, a wise shopper, and you are classic in dress.</p></div>
-                </div>
-            </div>
+           <div class="container">
+               <!-- About Section Heading-->
+               <h2 class="page-section-heading text-center text-uppercase text-white">Melancholic</h2>
+               <!-- Icon Divider-->
+               <div class="divider-custom divider-light">
+                   <div class="divider-custom-line"></div>
+                   <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                   <div class="divider-custom-line"></div>
+               </div>
+               <!-- About Section Content-->
+               <div class="row">
+                   <div class="col-lg-12 me-auto">
+                       <h2>Overview</h2>
+                       <p class="lead">Melancholic individuals are deeply introspective and sensitive, often exhibiting perfectionist tendencies. They hold themselves to high standards and are meticulous in their approach to tasks, often excelling in planning and organization. Melancholics possess a rich emotional depth and are frequently drawn to artistic or literary pursuits. However, they can be prone to pessimism and may react sensitively to stress or adverse events. They resist change and may take time to adapt to new situations or environments.</p>
+                   </div>
+                   <div class="col-lg-6 mb-3 text-melancholic">
+                       <div class="card border-0">
+                           <div class="card-header text-center bg-melancholic text-white lead">Strengths</div>
+                           <div class="card-body row">
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Detail-oriented</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Organized</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Responsible</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Deeply insightful</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Artistic</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Sacrificing</li>
+                               </div>
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Precise in work</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Loyal</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Serious</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Research-oriented</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Reflective</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #88d4fc;"><i class="fa-solid fa-circle-check"></i></span>Intellectually curious</li>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 mb-3 text-melancholic">
+                       <div class="card border-0">
+                           <div class="card-header text-center bg-melancholic text-white lead"> Weaknesses</div>
+                           <div class="card-body row">
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Pessimistic</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Emotionally unstable</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Resistant to change</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Self-critical</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Inflexible</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Anxious</li>
+                               </div>
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Avoids social situations</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Skeptical</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Slow to decide</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Excessively self-disciplined</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Distant</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Struggles with self-expression</li>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-12 me-auto">
+                       <h2>Melancholic in Relationships</h2>
+                       <p class="lead">In relationships, a melancholic individual tends to be thoughtful, introspective, and deeply sensitive. They value emotional depth and are often cautious about opening up to others, seeking a strong, meaningful connection with a partner. Their love is marked by loyalty and dedication, as they invest a lot of themselves into their relationships, often expecting the same level of commitment in return. While they may not express their emotions outwardly as readily, they experience them intensely, holding onto both the joys and sorrows of their romantic experiences. Melancholics tend to appreciate stability and are not typically drawn to short-term flings, preferring long-lasting partnerships built on trust and mutual understanding. Their introspective nature sometimes leads them to overthink, but their love is sincere and grounded in genuine care for their partner.</p>
+                   </div>
+               </div>
+           </div>
         </section>
-        <section class="page-section bg-info text-white mb-0" id="phlegmatic">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Phlegmatic</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-12 me-auto"><p class="lead">Yours is one of the most likeable personalities. "What a great guy (gal)!" is often heard about the phlegmatic. Phlegmatics are calm, easy-going, and good-natured. To the ancient Greeks, phlegmatic were like water: calm, cool, going with the flow. They are rarely flamboyant or dictatorial, but prefer cooperation and diplomacy. With their capacity for service and ability to remain calm under pressure, phlegmatics make good emergency responders, engineers, soldiers and military officers.</p></div>
-                    <div class="col-lg-12 me-auto"><p class="lead">If you are a phlegmatic, you get along with most everyone and have a great sense of humor. You tend to be respectful and respectful (in fact, your humor often prevents conflict in contentious situations). Underneath your somewhat reserved exterior is a gentle heart that seeks harmony and abhors conflict. You are dependable, polite, and even-tempered. You feel more comfortable in a small group of friends or even spending a quiet evening relaxing at home. You are rarely flashy, belligerent, or self-serving. You would rather take the blame (even unjustly) than stir up controversy or pick a fight. You may struggle with self-confidence. On the job, you do not seek power or the limelight, but work steadily and methodically. You are a team player, though if charged with leadership, you will fulfill the mission without becoming a tyrant. You can work with the most difficult of personalities. You prefer job security, working within a structured organization, but can also be a leader of great character and service.</p></div>
-                    <div class="col-lg-12 me-auto"><p class="lead">In relationships, you are steady, diplomatic, a stabilizing peace-maker. At times, when people are being very demanding or tension is high, you find yourself withdrawing to be alone--and then you may be accused of being apathetic or indifferent. As a phlegmatic, you would probably prefer that the whole dating process did not require so much effort. Nonetheless, once you are involved in a serious relationship, you will be reliable and faithful.</p></div>
-                </div>
-            </div>
+        <!-- Phlegmatic Result -->
+        <section class="page-section bg-phlegmatic text-white mb-0" id="phlegmatic">
+           <div class="container">
+               <!-- About Section Heading-->
+               <h2 class="page-section-heading text-center text-uppercase text-white">Phlegmatic</h2>
+               <!-- Icon Divider-->
+               <div class="divider-custom divider-light">
+                   <div class="divider-custom-line"></div>
+                   <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                   <div class="divider-custom-line"></div>
+               </div>
+               <!-- About Section Content-->
+               <div class="row">
+                   <div class="col-lg-12 me-auto">
+                       <h2>Overview</h2>
+                       <p class="lead">Phlegmatic individuals are known for their calm, peaceful nature. They are extremely patient, cool, and avoid conflicts. Phlegmatics have the ability to stabilize situations and soothe people around them. They prefer emotional harmony and balance. They possess deep insight and empathy, making them great at understanding and supporting others. However, they dislike change and struggle to adapt to new environments or situations. They can be overly reliant on others and may struggle with taking initiative or asserting themselves. Phlegmatics thrive in stable, predictable environments.</p>
+                   </div>
+                   <div class="col-lg-6 mb-3 text-phlegmatic">
+                       <div class="card border-0">
+                           <div class="card-header text-center bg-phlegmatic2 text-white lead">Strengths</div>
+                           <div class="card-body row">
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Calm</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Patient</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Cool</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Cooperative</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Values relationships</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Reliable</li>
+                               </div>
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Insightful</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Empathetic</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Sincere</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Mentally stable</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Supportive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #b49dfa;"><i class="fa-solid fa-circle-check"></i></span>Non-confrontational</li>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 mb-3 text-phlegmatic">
+                       <div class="card border-0">
+                           <div class="card-header text-center bg-phlegmatic2 text-white lead"> Weaknesses</div>
+                           <div class="card-body row">
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Dislikes change</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Lacks decisiveness</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Dependent</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Struggles with self-assertion</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Slow to act</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Not innovative</li>
+                               </div>
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Passive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Lacks passion</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Low drive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Withdrawn</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Averse to adventure</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Overly cautious</li>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-12 me-auto">
+                       <h2>Phlegmatic in Relationships</h2>
+                       <p class="lead">In relationships, a phlegmatic individual values stability, comfort, and harmony. They seek deep, long-term connections, prioritizing loyalty and trust over fleeting passions. Their approach to love is steady and reliable, as they tend to form strong, lasting bonds with partners. Communication plays a crucial role for them, as they believe in understanding and supporting each other through calm, open dialogue. While they may not seek intense emotional highs, they are attentive and caring, providing a peaceful, comfortable environment for their relationships to thrive. Phlegmatics prefer to avoid conflicts and are skilled at diffusing tension, often putting the needs of their partner before their own to maintain peace and balance.</p>
+                   </div>
+               </div>
+           </div>
         </section>
+        <!-- Sanguine Result -->
+        <section class="page-section bg-warning text-white mb-0" id="sanguine">
+           <div class="container">
+               <!-- About Section Heading-->
+               <h2 class="page-section-heading text-center text-uppercase text-white">Sanguine</h2>
+               <!-- Icon Divider-->
+               <div class="divider-custom divider-light">
+                   <div class="divider-custom-line"></div>
+                   <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                   <div class="divider-custom-line"></div>
+               </div>
+               <!-- About Section Content-->
+               <div class="row">
+                   <div class="col-lg-12 me-auto">
+                       <h2>Overview</h2>
+                       <p class="lead">Sanguine individuals are the epitome of liveliness and enthusiasm, highly sociable and able to blend into any environment with ease. They are optimistic, charismatic, and possess a magnetic personality that attracts others. Sanguines are motivated by new ideas and projects, bringing energy to those around them. However, their mood can be changeable, and they may struggle with focusing on tasks for long periods. They value intuition over planning, which can lead to impulsive decisions. Their desire for change drives them towards creative and innovative activities, although they may find routine work monotonous.</p>
+                   </div>
+                   <div class="col-lg-6 mb-3 text-sanguine">
+                       <div class="card border-0">
+                           <div class="card-header text-center bg-sanguine text-white lead">Strengths</div>
+                           <div class="card-body row">
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Optimistic</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Very sociable</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Flexible</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Energetic</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Expressive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Charismatic</li>
+                               </div>
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Curious</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Proactive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Strong communication skills</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Attractive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Team player</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #FFE587;"><i class="fa-solid fa-circle-check"></i></span>Creative</li>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 mb-3 text-sanguine">
+                       <div class="card border-0">
+                           <div class="card-header text-center bg-sanguine text-white lead"> Weaknesses</div>
+                           <div class="card-body row">
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Moody</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Lacks concentration</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Impulsive</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Lacks planning</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Short-tempered</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Thin responsibility</li>
+                               </div>
+                               <div class="col-sm-6">
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Not persistent</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Careless</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Struggles with deep relationships</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Inconsistent</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Lacks stability</li>
+                                    <li><span class="m-r-4 m-r-4" style="color: #cccccc;"><i class="fa-solid fa-circle-xmark"></i></span>Prone to superficial relationships</li>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-12 me-auto">
+                       <h2>Sanguine in Relationships</h2>
+                       <p class="lead">Sanguine individuals are passionate and vibrant in their relationships, quickly igniting love with an infectious energy and enthusiasm. They thrive on variety and enjoy the excitement of new experiences, always seeking to keep things fresh and engaging. Rich in affection, they are generous with their love and often go out of their way to entertain and charm their partners, making them feel adored and special. Their friendly and sociable nature means they connect easily with others, and they thrive in social settings. However, their emotional nature can sometimes lead them to be easily swayed by their feelings, which can result in intense emotional experiences, both highs and lows. Despite this, their passion and zest for life bring warmth and joy to their relationships.</p>
+                   </div>
+               </div>
+           </div>
+        </section>
+        
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">

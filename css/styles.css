@@ -8180,6 +8180,49 @@ textarea.form-control-lg {
   background-color: transparent !important;
 }
 
+
+.bg-choleric {
+  background-color: #f08076;
+}
+
+.bg-melancholic {
+  background-color: #023651;
+}
+
+.text-melancholic {
+  color: #023651;
+}
+
+.bg-phlegmatic {
+  background-color: #b49dfa;
+}
+
+.bg-phlegmatic2 {
+  background-color: #1f056b;
+}
+
+.text-phlegmatic {
+  color: #1f056b;
+}
+
+.bg-sanguine {
+  background-color: #4B3900;
+}
+
+.text-sanguine {
+  color: #4B3900;
+}
+
+.col-sm-6 {
+  list-style-type: none;
+}
+
+.m-r-4 {
+  margin-right: 4px;
+}
+
+
+
 .bg-opacity-10 {
   --bs-bg-opacity: 0.1;
 }
