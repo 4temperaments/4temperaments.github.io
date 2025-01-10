@@ -90,43 +90,8 @@ $(document).ready(function() {
         // Display results
         $('#resultchart').show();
 
-        // Update form
-        document.getElementById('submitButton').classList.remove('disabled');
-        updateForm();
-    });
-
-    // Email JS
-    (function() {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init({
-          publicKey: "ANW_yC-Ql6mJg5xhu",
-        });
-    })();
-
-    // Form submission handler
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Get form data
-        const fr_nme = document.getElementById('name').value;
-        const to_eml = document.getElementById('email').value;
-        const yes_dt = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-
-        // Send the email using EmailJS
-        emailjs.send("contact_service", "contact_form", {
-            from_name: to_eml,
-            to_name: fr_nme,
-            phone: yes_dt,
-            message: message
-        })
-        .then(function(response) {
-            console.log("Success", response);
-            alert("Your message has been sent!");
-        }, function(error) {
-            console.log("Error", error);
-            // alert("There was an issue sending your message.");
-        });
+        // document.getElementById('submitButton').classList.remove('disabled');
+        // updateForm();
     });
 
     // Function to generate the temperament chart
@@ -254,6 +219,42 @@ $(document).ready(function() {
         new Chart(ctx, config);
     }
 
+    // // Email JS
+    // (function() {
+    //     // https://dashboard.emailjs.com/admin/account
+    //     emailjs.init({
+    //       publicKey: "ANW_yC-Ql6mJg5xhu",
+    //     });
+    // })();
+
+    // // Form submission handler
+    // document.getElementById('contactForm').addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Prevent the default form submission
+
+    //     // Get form data
+    //     const fr_nme = document.getElementById('name').value;
+    //     const to_eml = document.getElementById('email').value;
+    //     const yes_dt = document.getElementById('phone').value;
+    //     const message = document.getElementById('message').value;
+
+    //     // Send the email using EmailJS
+    //     emailjs.send("contact_service", "contact_form", {
+    //         from_name: to_eml,
+    //         to_name: fr_nme,
+    //         phone: yes_dt,
+    //         message: message
+    //     })
+    //     .then(function(response) {
+    //         console.log("Success", response);
+    //         alert("Your message has been sent!");
+    //     }, function(error) {
+    //         console.log("Error", error);
+    //         alert("There was an issue sending your message.");
+    //     });
+    // });
+
+    // Surprise Message
+    // She said "Yes" 2025-01-10
     function updateForm() {
         // Get the current date and time
         const currentDate = new Date();
